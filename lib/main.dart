@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         //Second Branch part 2
         //App->1
         //App Line -> 2
+        //Awesome
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
