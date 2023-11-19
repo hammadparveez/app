@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
         //App->1
         //App Line -> 2
         //Awesome
+        //Line is easy
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
