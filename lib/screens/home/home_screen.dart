@@ -1,7 +1,9 @@
+import 'package:fasion/screens/home/components/about_me.dart';
+import 'package:fasion/screens/home/components/experience.dart';
+import 'package:fasion/screens/home/components/portfolio_section.dart';
 import 'package:fasion/screens/home/components/profile_section.dart';
+import 'package:fasion/screens/home/components/skills.dart';
 import 'package:fasion/utils/colors.dart';
-import 'package:fasion/utils/images.dart';
-import 'package:fasion/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +14,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.primary,
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.transparent,
         iconTheme: const IconThemeData(color: Colors.white),
       ),
@@ -20,10 +23,17 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
-            child: Column(
-              children: [
-                ProfileSection(),
-              ],
+            child: FractionallySizedBox(
+              widthFactor: .7,
+              child: Column(
+                children: [
+                  ProfileSection(),
+                  AboutMeSection(),
+                  PortfolioSection(),
+                  SkillsSection(),
+                  ExperienceSection(),
+                ],
+              ),
             ),
           ),
         ),
