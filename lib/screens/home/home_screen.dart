@@ -1,4 +1,5 @@
 import 'package:fasion/screens/home/components/about_me.dart';
+import 'package:fasion/screens/home/components/contact_form.dart';
 import 'package:fasion/screens/home/components/experience.dart';
 import 'package:fasion/screens/home/components/portfolio_section.dart';
 import 'package:fasion/screens/home/components/profile_section.dart';
@@ -32,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                   PortfolioSection(),
                   SkillsSection(),
                   ExperienceSection(),
+                  ContactFormSection(),
                 ],
               ),
             ),
