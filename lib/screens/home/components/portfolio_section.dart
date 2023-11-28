@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fasion/screens/home/components/about_me.dart';
+import 'package:fasion/utils/images.dart';
 import 'package:flutter/material.dart';
 
 class PortfolioSection extends StatelessWidget {
@@ -14,17 +15,18 @@ class PortfolioSection extends StatelessWidget {
           const HeadingWithHztDivider(heading: 'Portfolio'),
           const SizedBox(height: 12),
           CarouselSlider.builder(
-            itemCount: 4,
+            itemCount: AppImages.portfolioImages.length,
             itemBuilder: (context, index, realIndex) {
               return Image.asset(
-                'assets/portfolio/meritas.png',
+                AppImages.portfolioImages[index],
+                fit: BoxFit.fill,
               );
             },
             options: CarouselOptions(
-              height: 350,
+              height: 400,
               autoPlay: true,
               enlargeCenterPage: true,
-              enlargeFactor: 0.5,
+              enlargeFactor: 0.4,
               autoPlayCurve: Curves.decelerate,
             ),
           ),
