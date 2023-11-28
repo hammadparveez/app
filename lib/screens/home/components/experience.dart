@@ -113,12 +113,22 @@ class ExperienceSection extends StatelessWidget {
                       width: double.infinity,
                       color: AppColors.heading1,
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Column(
-                        children: [
-                          Text(exp['date']),
-                          Text(exp['company']),
-                          Text('Location: ${exp['location']}'),
-                        ],
+                      child: DefaultTextStyle(
+                        style: TextStyle(color: Colors.white),
+                        child: Column(
+                          children: [
+                            Text(exp['date']),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 4.0),
+                              child: Text(
+                                exp['company'],
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            Text('Location: ${exp['location']}'),
+                          ],
+                        ),
                       ),
                     ),
                     //Body Section
