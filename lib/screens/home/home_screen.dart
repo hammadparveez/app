@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      endDrawer: const Drawer(),
+      // endDrawer: const Drawer(),
       extendBodyBehindAppBar: true,
       body: SafeArea(
         child: SingleChildScrollView(
