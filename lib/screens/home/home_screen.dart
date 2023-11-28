@@ -1,6 +1,7 @@
 import 'package:fasion/screens/home/components/about_me.dart';
 import 'package:fasion/screens/home/components/contact_form.dart';
 import 'package:fasion/screens/home/components/experience.dart';
+import 'package:fasion/screens/home/components/footer.dart';
 import 'package:fasion/screens/home/components/portfolio_section.dart';
 import 'package:fasion/screens/home/components/profile_section.dart';
 import 'package:fasion/screens/home/components/skills.dart';
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Center(
             child: FractionallySizedBox(
-              widthFactor: .7,
+              widthFactor: .85,
               child: Column(
                 children: [
                   ProfileSection(),
@@ -34,6 +35,9 @@ class HomeScreen extends StatelessWidget {
                   SkillsSection(),
                   ExperienceSection(),
                   ContactFormSection(),
+                  const SizedBox(height: 24),
+                  Divider(color: AppColors.textColor, thickness: 3),
+                  FooterSection(),
                 ],
               ),
             ),
