@@ -16,8 +16,8 @@ class AboutMeSection extends StatelessWidget {
           Container(
             height: 300,
             width: 300,
-            margin: EdgeInsets.symmetric(vertical: 12),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.symmetric(vertical: 12),
+            decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: AssetImage(AppImages.aboutMe),
@@ -35,7 +35,7 @@ class AboutMeSection extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          FractionallySizedBox(
+          const FractionallySizedBox(
             widthFactor: .5,
             child: Divider(
               color: AppColors.textColor,
@@ -69,7 +69,7 @@ class HeadingWithHztDivider extends StatelessWidget {
       children: [
         Expanded(child: Container(height: 1, color: AppColors.heading1)),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Text(
             heading,
             style: AppTextStyles.heading2,

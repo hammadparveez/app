@@ -114,7 +114,7 @@ class ExperienceSection extends StatelessWidget {
                       color: AppColors.heading1,
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: DefaultTextStyle(
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                         child: Column(
                           children: [
                             Text(exp['date']),
@@ -123,7 +123,7 @@ class ExperienceSection extends StatelessWidget {
                                   const EdgeInsets.symmetric(vertical: 4.0),
                               child: Text(
                                 exp['company'],
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: const TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ),
                             Text('Location: ${exp['location']}'),

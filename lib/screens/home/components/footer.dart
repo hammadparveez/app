@@ -11,7 +11,7 @@ class FooterSection extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24),
       child: Column(
         children: [
-          FittedBox(
+          const FittedBox(
               child: Text(
             'Start a conversation',
             style: AppTextStyles.heading2,

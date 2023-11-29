@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: AppColors.primary,
       appBar: AppBar(
@@ -22,7 +23,7 @@ class HomeScreen extends StatelessWidget {
       ),
       // endDrawer: const Drawer(),
       extendBodyBehindAppBar: true,
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: FractionallySizedBox(
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                   SkillsSection(),
                   ExperienceSection(),
                   ContactFormSection(),
-                  const SizedBox(height: 24),
+                  SizedBox(height: 24),
                   Divider(color: AppColors.textColor, thickness: 3),
                   FooterSection(),
                 ],
